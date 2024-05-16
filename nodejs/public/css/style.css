@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    position: relative;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo{
+    color: #303030;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #303030;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.bg{
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+    right: 0;
+}
+
+.esp{
+    position: absolute;
+    top: 700px;
+    bottom: 0;
+    width: 350px;
+}
+
+.header-info{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.header-txt h1{
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.header-txt p{
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 35px;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: #0f77ff;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: white;   
+    text-transform: capitalize;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+
+.btn-1:hover{
+    background-color: #025ced;
+}
+
+.header-img{
+    width: 50%;
+}
+
+.header-img img{/**************/
+    width: 600px;
+}
+
+.info{
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-1{
+    width: 300px;
+    padding: 15px 25px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.info-1 img{
+    width: 35px;
+}
+
+.info-1 h3{
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 10px;
+}
+
+.info-1 p{
+    font-size: 16px;
+    color: #545454;
+}
+
+.nosotros{
+    position: relative;
+}
+
+.bg-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    z-index: -1;
+}
+
+.nosotros-info{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nosotros-img{
+    width: 50%;
+}
+
+.nosotros-img img{
+    width: 650px;
+}
+
+.nosotros-txt{
+    width: 50%;
+}
+
+.nosotros-txt span{
+    font-size: 16px;
+    color: #0f77ff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.nosotros-txt h2{
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.nosotros-txt p{
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 50px;
+}
+
+.products{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.products h2{
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.products p{
+    font-size: 18px;
+    color: #545454;
+    margin-bottom: 70px;
+    padding: 0 200px;
+}
+
+.product-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 3rem;
+}
+
+.product{
+    padding-bottom: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+}
+
+.product img{
+    width: 100%;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+}
+
+.product h3{
+    font-size: 20px;
+    color: #303030;
+    margin-top: 15px;
+}
+
+.product p{
+    font-size: 16px;
+    padding: 30px;
+    color: #545454;
+    margin: 0
+}
+
+.product span{
+    background-color: #0f5fff;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+hr{
+    border: 1px solid #EEE;
+}
+
+.footer{
+    padding: 100px 0;
+    background-color: #FFFFFF;
+    margin-right: 0;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3{
+    font-size: 20px;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.socials img{
+    margin-right: 15px;
+}
+
+.scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #0f77ff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #005cbf;
+    }
+/******************** ESTILO PARA LA PAGINA DE REGISTRO DE EVENTO **********************/
+
+.header-info-evento{
+    display: flex;
+    margin-top: 100px;
+}
+
+.container-eventos{
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+.header-txt-evento{
+    margin-right: 1rem;
+}
+
+form{
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    /*width: 400px;*/
+    margin-bottom: 60px;
+}
+
+form h2{
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+label{
+    color: #545454;
+}
+
+select{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 55px;
+    border: 2px solid #EEE;
+    color: #303030;
+    outline: none;
+    width: 350px;
+}
+
+.op{
+    color: #545454;
+}
+
+input{
+    padding: 17px 25px;
+    margin: 6px;
+    border-radius: 25px;
+    /* margin-bottom: 10px; */
+    width: 350px;
+    border: 2px solid #EEE;
+    color: #303030;
+    outline: none;
+}
+
+.distribucion{
+    display: flex;
+    grid-template-columns: 1fr 3fr;
+    /* column-gap: 5px; */
+    /* margin-top: 2rem; */
+    border: 2px solid;
+    width: 100%;
+    flex-direction: column;
+}
+
+.componentes{
+    border: 2px solid;
+    height: 15%;
+}
+
+.salon{
+    height: 60%;
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+
+.salon1{
+    border: 2px solid;
+    height: 100%;
+}
+
+/******************** ESTILO PARA LA PAGINA DE LOGIN **********************/
+
+.header-info-login {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.btn-1-log{
+    display: inline-block;
+    background-color: #0f77ff;
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.btn-2{
+    font-size: 14px;
+    border: 1.5px solid;
+    border-color: #0f77ff;
+    padding: 8px 131px;
+    border-radius: 25px;
+}
+
+/******************** ESTILO PARA LA PAGINA DE REGISTRO DE CUENTA **********************/
+
+.input-group-reg{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campos{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}

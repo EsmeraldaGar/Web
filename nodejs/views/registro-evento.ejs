@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BOSI-reg</title>
+  <link href="resourses/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+    
+<body>
+    
+    <header class="header">
+
+        <div class="menu container">
+
+            <a class="logo" href="#">Fresh Rescue</a>
+            <input type="checkbox" id="menu">
+            <label for="menu"><img class="menu-icono" src="resourses/images/menu.png" alt=""></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.ejs">Inicio</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <!--<li><a href="registro-evento.html">Reservaciones </a></li>
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>-->
+                    <button onclick="logout()">Cerrar sesión</button>
+
+                    <script>
+                        function logout() {
+                        // Redirige al usuario a la ruta de cierre de sesión
+                        window.location.href = '/logout';
+                        }
+                    </script>
+
+                </ul>
+
+            </nav>
+        
+        </div>
+    </header>
+
+        
+
+
+    <main class="products container">        
+        <div class="header-content container">
+
+            <div class="header-info">
+
+                <div class="header-txt">    
+
+                    <form>
+                        <h2>Registra tu evento</h2>
+
+                        <div class="input-group">
+
+                            <label for="id_evento">ID Evento:</label>
+                            <input class="formu" type="id_evento" id="id_evento" name="id_evento" required placeholder="ID Evento"><br><br>
+
+                            <label for="nombre_evento">Nombre Evento:</label>
+                            <input class="formu" type="text" id="nombre_evento" name="nombre_evento" required placeholder="Nombre Evento"><br><br>
+
+                            <label for="tipo_evento">Tipo Evento:</label>
+                            <select id="opcion" name="opcion">
+                                <option class="op" value="" disabled selected hidden>Selecciona Una Opción</option>
+                                <option class="op" value="graduacion">Graduación</option>
+                                <option class="op" value="boda">Boda</option>
+                                <option class="op" value="bautizo">Bautizo</option>
+                                <option class="op" value="quinceañero">XV años</option>
+                                <option class="op" value="reunionF">Reunión Familiar</option>
+                                <option class="op" value="reunionN">Reunión de Negocios</option>
+                                <option class="op" value="otro">Otro</option>
+                                <input type="text" id="campoTexto" style="display: none;" >
+                                </select>
+
+                            <label for="fecha_evento">Fecha de Evento:</label>
+                            <input class="formu" type="date" id="fecha_evento" name="fecha_evento" required placeholder="Fecha Evento"><br><br>
+
+                            <label for="hora_evento">Hora:</label>
+                            <input class="formu" type="time" id="hora_evento" name="hora_evento" required placeholder="Hora"><br><br>
+
+                            <!-- aqui no se como se le haga, habilitar varios campos, no creo sea lo correcto, o que se agreguen seleccionado como si fuera un agrear amigos, seria todo un rollo, o simplemente que ponga un numero de invitados, esa es la mejor opcion-->
+                            <label for="invitado_evento">Agregar Invitado:</label>
+                            <input class="formu" type="text" id="invitado_evento" name="invitado_evento" required placeholder="Agregar Invitado"><br><br>
+
+
+                            <label for="platillos_evento">Lista de Platillos:</label>
+                            <select name="opcion">
+                                <option class="op" value="" disabled selected hidden>Selecciona Una Opción</option>
+                                <option class="op" value="gaseosa">Platillo 1</option>
+                                <option class="op" value="">Platillo 2</option>
+                                <option class="op" value="">Platillo 3</option>
+
+                              </select>
+
+                            <label for="telefono_usuario">Teléfono:</label>
+                            <input type="text" id="telefono_usuario" name="telefono_usuario" required placeholder="Teléfono"><br><br>
+                            <!--
+                            <label for="entrecalle1_mercado">Entre Calle 1:</label>
+                            <input type="text" id="entrecalle1_mercado" name="entrecalle1_mercado" required placeholder="Entre Calle 1"><br><br>
+
+                            <label for="entrecalle2_mercado">Entre Calle 2:</label>
+                            <input type="text" id="entrecalle2_mercado" name="entrecalle2_mercado" required placeholder="Entre Calle 2"><br><br>
+
+                            <label for="referencias_mercado">Referencias:</label>
+                            <input type="text" id="referencias_mercado" name="referencias_mercado" required placeholder="Referencias"><br><br>
+
+                            <label for="correo_mercado">Correo:</label>
+                            <input type="email" id="correo_mercado" name="correo_mercado" required placeholder="Correo"><br><br>
+                            -->
+
+
+                        </div>
+
+                        
+
+                        <input class="btn-1" type="submit" value="Registrar">
+                    </form>
+                </div>
+
+                <div class="mesas">
+                </div>
+            </div>
+        
+        </div>
+    </main>
+
+    <hr>
+
+    <footer class="footer container">
+
+        <div class="footer-links">
+
+            <div class="link">
+
+                <h3>Copyright &copy 2024 Fresh Rescue</h3>
+                <div class="socials">
+                    <img src="resourses/images/s1.svg" alt="">
+                    <img src="resourses/images/s2.svg" alt="">
+                    <img src="resourses/images/s3.svg" alt="">
+                    <img src="resourses/images/s4.svg" alt="">
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
